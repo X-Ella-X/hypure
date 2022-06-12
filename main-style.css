@@ -13,6 +13,16 @@
   z-index: -1;
 }
 
+.invisibleDiv-1 {
+  opacity: 0;
+  border: 5px solid red;
+  width: 3rem;
+  height: 5rem;
+  position: absolute;
+  top: 9%;
+  left: 47.5%;
+}
+
 /* L O G O */
 .logo {
   width: 8rem;

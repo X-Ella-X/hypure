@@ -43,12 +43,35 @@
                 0 0 35px rgb(255 255 0 / 0.7), 0 0 50px rgb(255 255 0 / 0.6);
             border-color: #fff; */
         }
+
+        .applyBtn {
+            width: 10rem;
+            height: 1.5rem;
+            background: url("./images/Button\ -\ Apply\ Now.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            bottom: 3%;
+            left: 2.5%;
+        }
+
+        .applyBtn:hover {
+            transition: all .3s ease-in-out;
+            transform: scale(1.1);
+            box-shadow: 0 0 5px #ffff00, 0 0 20px #fff200,
+                0 0 35px rgba(255, 251, 0, 0.7), 0 0 50px rgba(200, 0, 255, 0.6);
+            border-color: #fff;
+        }
     </style>
 </head>
 
 <body>
     <a href="./main.html">
         <div class="logo grow"></div>
+    </a>
+
+    <a href="./contact.html">
+        <div class="applyBtn"></div>
     </a>
 </body>
 
