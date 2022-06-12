@@ -14,12 +14,10 @@
             box-sizing: border-box;
         }
 
-        .img {
-            width: 100%;
-            height: auto;
-            background: url("./images/partners.jpg") no-repeat fixed;
-            background-size: cover;
-            z-index: -1;
+        body {
+            width: 100vw;
+            height: 100%;
+            background-image: url(./images/partners.jpg);
         }
 
         .logo {
@@ -27,7 +25,6 @@
             height: 70px;
             background: url("./images/logo.png") no-repeat;
             background-size: 100% 100%;
-            z-index: 99;
             position: absolute;
             top: 5%;
             right: 5%;
@@ -47,9 +44,8 @@
 </head>
 
 <body>
-    <img src="./images/cyberpunk-partner.jpg" alt="Partners Page" usemap="#workmap">
-
-    <!-- <div class="partner-page"></div> -->
+    <img src="" alt="partners-page" usemap="#workmap">
+    <div class="partner-page"></div>
     <map name="workmap">
         <area shape="rect" coords="130,300,228,446" alt="Discord" href="https://discord.com/" target="_blank">
         <area shape="rect" coords="263,342,335,464" alt="Playstation" href="https://www.playstation.com/en-us/"
@@ -67,7 +63,7 @@
 
     </map>
 
-    <a href="./mainpage.html">
+    <a href="./main.html">
         <div class="logo grow"></div>
     </a>
 </body>
