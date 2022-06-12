@@ -13,7 +13,33 @@
 }
 
 .logo {
-  width: 250px;
+  width: 100px;
+  height: 40px;
+  background: url("./images/logo.png") no-repeat;
+  background-size: 100% 100%;
+  z-index: 99;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+@media screen and (min-width:719px){
+  .logo {
+    width: 150px;
+  height: 50px;
+  background: url("./images/logo.png") no-repeat;
+  background-size: 100% 100%;
+  z-index: 99;
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  }
+  
+}
+
+@media screen and (min-width: 900px) {
+  .logo {
+    width: 250px;
   height: 70px;
   background: url("./images/logo.png") no-repeat;
   background-size: 100% 100%;
@@ -21,6 +47,7 @@
   position: absolute;
   top: 5%;
   right: 5%;
+  }
 }
 
 .grow {
