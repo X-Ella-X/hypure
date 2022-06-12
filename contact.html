@@ -54,20 +54,36 @@
         fieldset {
             width: 100%;
             padding: 12px;
+            border: 2px solid rgb(245, 181, 246);
         }
 
-        .container-form {
+        .container-form,
+        .container-phone {
             width: 40%;
             border-radius: 0.5rem;
-            background-color: #f2f2f2;
+            border: 2px solid rgb(245, 181, 246);
+            background-color: rgba(221, 80, 136, 0.742);
             padding: 1.3rem;
             position: absolute;
             top: 10%;
             left: 30%;
-            opacity: 0.85;
+            opacity: 1;
             font-family: 'Chau Philomene One', sans-serif;
             font-size: 1.4rem;
+            color: #f1dee6fd;
         }
+
+        .container-phone {
+            position: absolute;
+            top: 90%;
+            padding: 0.4rem;
+        }
+
+        .container-phone p {
+            padding: 0.2rem;
+        }
+
+
 
         legend {
             padding: 0.7rem;
@@ -75,6 +91,7 @@
 
         input[type="date"] {
             margin: 0.8rem 0;
+            font-family: 'Chau Philomene One', sans-serif;
         }
 
         input[type="text"],
@@ -88,23 +105,25 @@
             box-sizing: border-box;
             margin-top: 0.3rem;
             margin-bottom: 1rem;
+            border: 2px solid rgb(245, 181, 246);
+            font-family: 'Chau Philomene One', sans-serif;
         }
 
         button[type="submit"] {
-            background-color: #04aa6d;
-            color: white;
+            background-color: #d84d81;
+            color: rgb(248, 206, 249);
             padding: 0.8rem 2rem;
-            border: none;
+            border: 2px solid rgb(245, 181, 246);
             border-radius: 0.5rem;
             cursor: pointer;
-            font-size: large;
+            font-weight: bold;
+            font-size: 0.9rem;
         }
 
         button[type="submit"]:hover {
-            background-color: #45a049;
-            box-shadow: 0 0 2px #15ee7e, 0 0 2px #15ee7e,
-                0 0 2px #15ee7e, 0 0 5px #15ee7e;
-            border-color: #fff;
+            background-color: rgb(248, 206, 249);
+            color: #d84d81;
+            border: 2px solid #d84d81;
         }
     </style>
 </head>
@@ -165,6 +184,11 @@
                 </div>
             </fieldset>
         </form>
+
+    </div>
+    <div class="container-phone">
+        <p>Who has the balls to call us?</p>
+        <p>+65-955-502-34</p>
     </div>
 </body>
 
