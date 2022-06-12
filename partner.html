@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYPURE | Partners</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .img {
+            width: 100%;
+            height: auto;
+
+            /* background: url("./images/cyberpunk-partner.jpg") no-repeat fixed; */
+            /* background-size: cover; */
+            object-fit: contain;
+
+            z-index: -1;
+        }
+
+        .logo {
+            width: 250px;
+            height: 70px;
+            background: url("./images/logo.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            top: 5%;
+            right: 5%;
+        }
+
+        .grow {
+            transition: all .2s ease-in-out;
+        }
+
+        .grow:hover {
+            transform: scale(1.4);
+            /* box-shadow: 0 0 5px #ffff00, 0 0 20px rgb(255 255 0 / 0.8),
+                0 0 35px rgb(255 255 0 / 0.7), 0 0 50px rgb(255 255 0 / 0.6);
+            border-color: #fff; */
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./images/cyberpunk-partner.jpg" alt="Partners Page" usemap="#workmap">
+
+    <!-- <div class="partner-page"></div> -->
+    <map name="workmap">
+        <area shape="rect" coords="130,300,228,446" alt="Discord" href="https://discord.com/" target="_blank">
+        <area shape="rect" coords="263,342,335,464" alt="Playstation" href="https://www.playstation.com/en-us/"
+            target="_blank">
+        <area shape="rect" coords="362,374,426,480" alt="Xbox" href="https://www.xbox.com/en-US/" target="_blank">
+        <area shape="rect" coords="452,399,501,492" alt="Steam" href="https://store.steampowered.com/" target="_blank">
+        <area shape="rect" coords="525,419,564,501" alt="Twitch" href="https://www.twitch.tv/" target="_blank">
+        <area shape="rect" coords="588,437,626,521" alt="EA Sports" href="https://www.ea.com/sports" target="_blank">
+        <area shape="rect" coords="648,452,728,545" alt="Nintendo" href="https://www.nintendo.com/" target="_blank">
+        <area shape="rect" coords="735,614,846,641" alt="Skittles" href="https://www.skittles.com/" target="_blank">
+        <area shape="rect" coords="869,270,1085,341" alt="G-Fuel" href="https://gfuel.com/" target="_blank">
+        <area shape="rect" coords="1248,474,1392,573" alt="McDonalds" href="https://www.mcdonalds.com/us/en-us.html"
+            target="_blank">
+        <area shape="rect" coords="1646,287,1856,365" alt="Star-Wars" href="https://www.starwars.com/" target="_blank">
+
+    </map>
+
+    <a href="./mainpage.html">
+        <div class="logo grow"></div>
+    </a>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet">
+
+    <title>HYPURE | Contact Us</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contact-page {
+            width: 100%;
+            height: 100vh;
+            background: url("./images/cyberpunk-contact.jpg") no-repeat center center fixed;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .logo {
+            width: 250px;
+            height: 70px;
+            background: url("./images/logo.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            top: 5%;
+            right: 5%;
+        }
+
+        .grow {
+            transition: all .2s ease-in-out;
+        }
+
+        .grow:hover {
+            transform: scale(1.4);
+            /* box-shadow: 0 0 5px #ffff00, 0 0 20px rgb(255 255 0 / 0.8),
+                0 0 35px rgb(255 255 0 / 0.7), 0 0 50px rgb(255 255 0 / 0.6);
+            border-color: #fff; */
+        }
+
+        /* ---------CONTACT FORM------------ */
+
+        fieldset {
+            width: 100%;
+            padding: 12px;
+        }
+
+        .container-form {
+            width: 40%;
+            border-radius: 0.5rem;
+            background-color: #f2f2f2;
+            padding: 1.3rem;
+            position: absolute;
+            top: 10%;
+            left: 30%;
+            opacity: 0.85;
+            font-family: 'Chau Philomene One', sans-serif;
+            font-size: 1.4rem;
+        }
+
+        legend {
+            padding: 0.7rem;
+        }
+
+        input[type="date"] {
+            margin: 0.8rem 0;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.6rem;
+            /* N E O N  */
+            /* border: 0.1rem solid #ccc; */
+            border-radius: 0.3rem;
+            box-sizing: border-box;
+            margin-top: 0.3rem;
+            margin-bottom: 1rem;
+        }
+
+        button[type="submit"] {
+            background-color: #04aa6d;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: large;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+            box-shadow: 0 0 2px #15ee7e, 0 0 2px #15ee7e,
+                0 0 2px #15ee7e, 0 0 5px #15ee7e;
+            border-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contact-page"></div>
+
+    <a href="./mainpage.html">
+        <div class="logo grow"></div>
+    </a>
+
+    <div class="container-form">
+        <form action="https://formspree.io/f/xbjwbaez" method="POST" id="login">
+            <fieldset>
+                <legend> Leave a message, but please keep it short, ok?</legend>
+                <div>
+                    <label for="name">Name
+                        <input id="name" type="text" name="name" size="30" placeholder="Type your name" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="company">Company name
+                        <input id="company" type="text" name="company" size="30" placeholder="Company name (optional)">
+                    </label>
+                </div>
+                <div>
+                    <label for="email">E-Mail
+                        <input id="email" type="text" name="email" size="30" placeholder="We need your email adress"
+                            required>
+                    </label>
+                </div>
+                <div>
+                    <label for="purpose">What do you want from us?</label>
+                    <select id="purpose" name="purpose">
+                        <option value="service">Your service</option>
+                        <option value="job">Job</option>
+                        <option value="else">I have something else to tell you</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="date">Wanna see us face-to-face?</label><br>
+                    <input type="date">
+                    <input type="time" name="time" id="time" value="09:00">
+                </div>
+                <!-- <div>
+                    <label for="date">Wanna see us face-to-face?</label>
+                    <br>
+                    <input type="datetime-local">
+                </div> -->
+                <div>
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Write something right here..."
+                        style="height:130px"></textarea>
+                </div>
+                <div>
+                    <button type="submit" id="order-button">Send</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

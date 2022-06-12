@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYPURE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .mainpage {
+            width: 100%;
+            height: 100vh;
+            background: url("./images/mainpage.jpg") no-repeat center center fixed;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .logo {
+            width: 250px;
+            height: 70px;
+            background: url("./images/logo.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            top: 5%;
+            right: 5%;
+        }
+
+        .grow {
+            transition: all .2s ease-in-out;
+        }
+
+        .grow:hover {
+            transform: scale(1.4);
+            /* box-shadow: 0 0 5px #ffff00, 0 0 20px rgb(255 255 0 / 0.8),
+                0 0 35px rgb(255 255 0 / 0.7), 0 0 50px rgb(255 255 0 / 0.6);
+            border-color: #fff; */
+        }
+
+        .contact {
+            width: 80px;
+            height: 650px;
+            background: url("./images/contact-logo.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            top: 20%;
+            right: 14%;
+        }
+
+        .contact:hover {
+            width: 80px;
+            height: 70px;
+            transform: scale(1.8);
+            transition: all .3s ease-in-out;
+            background: url("./images/contact-logo-hover.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            top: 20%;
+            right: 14%;
+        }
+
+        .contact:hover:after {
+            content: attr(data-legend);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+            transform: translateY(100%);
+            font-size: 1rem;
+            font-family: 'Chau Philomene One', sans-serif;
+            color: #15ee7e;
+        }
+
+        .about {
+            width: 80px;
+            height: 700px;
+            background: url("./images/about-logo.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            top: 5%;
+            left: 18%;
+        }
+
+        .about:hover {
+            display: block;
+            width: 90px;
+            height: 80px;
+            transform: scale(1.8);
+            transition: all .3s ease-in-out;
+            background: url("./images/about-logo-hover.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            top: 5%;
+            left: 18%;
+        }
+
+        .about:hover:after {
+            content: attr(data-legend);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+            transform: translateY(100%);
+            font-size: 1rem;
+            font-family: 'Chau Philomene One', sans-serif;
+            color: #15ee7e;
+        }
+
+        .services {
+            width: 120px;
+            height: 720px;
+            background: url("./images/services-logo.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            top: 10%;
+            left: 35%;
+        }
+
+        .services:hover {
+            width: 120px;
+            height: 120px;
+            transform: scale(1.8);
+            transition: all .3s ease-in-out;
+            background: url("./images/services-logo-hover.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            top: 10%;
+            left: 35%;
+        }
+
+        .services:hover:after {
+            content: attr(data-legend);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+            transform: translateY(100%);
+            font-size: 1rem;
+            font-family: 'Chau Philomene One', sans-serif;
+            color: #15ee7e;
+        }
+
+        .award {
+            width: 100px;
+            height: 710px;
+            background: url("./images/award-logo.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+        }
+
+        .award:hover {
+            width: 120px;
+            height: 110px;
+            transform: scale(1.8);
+            transition: all .3s ease-in-out;
+            background: url("./images/award-logo-hover.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            top: 20%;
+            left: 24%;
+        }
+
+        .award:hover:after {
+            content: attr(data-legend);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+            transform: translateY(100%);
+            font-size: 1rem;
+            font-family: 'Chau Philomene One', sans-serif;
+            color: #15ee7e;
+        }
+
+        .career {
+            width: 100px;
+            height: 780px;
+            background: url("./images/career-logo.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            top: 10%;
+            right: 32%;
+        }
+
+        .career:hover {
+            width: 100px;
+            height: 80px;
+            transform: scale(1.8);
+            transition: all .3s ease-in-out;
+            background: url("./images/career-logo-hover.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            top: 10%;
+            right: 32%;
+        }
+
+        .career:hover:after {
+            content: attr(data-legend);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+            transform: translateY(100%);
+            font-size: 1rem;
+            font-family: 'Chau Philomene One', sans-serif;
+            color: #15ee7e;
+        }
+
+        .partner {
+            width: 100px;
+            height: 700px;
+            background: url("./images/partner-logo.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            top: 22%;
+            left: 55%;
+        }
+
+        .partner:hover {
+            width: 110px;
+            height: 80px;
+            transform: scale(1.8);
+            transition: all .3s ease-in-out;
+            background: url("./images/partner-logo-hover.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            top: 22%;
+            left: 55%;
+        }
+
+        .partner:hover:after {
+            content: attr(data-legend);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+            transform: translateY(100%);
+            font-size: 1rem;
+            font-family: 'Chau Philomene One', sans-serif;
+            color: #15ee7e;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="mainpage"></div>
+
+    <a href="./mainpage.html">
+        <div class="logo grow"></div>
+    </a>
+
+    <a href="./contact.html">
+        <div class="contact" data-legend="Contact Us"></div>
+    </a>
+
+    <a href="./about.html">
+        <div class="about" data-legend="About Us"></div>
+    </a>
+
+    <a href="./services.html">
+        <div class="services" data-legend="Services"></div>
+    </a>
+
+    <a href="./award.html">
+        <div class="award" data-legend="Awards"></div>
+    </a>
+
+    <a href="./career.html">
+        <div class="career" data-legend="Career"></div>
+    </a>
+
+    <a href="./partner.html">
+        <div class="partner" data-legend="Partners"></div>
+    </a>
+
+</body>
+
+
+</html>
