@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYPURE | Services</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .services-page-Q2 {
+            width: 100%;
+            height: 100vh;
+            background: url("./images/cyberpunk-services-\ Q4C.jpg") no-repeat fixed;
+            background-size: 100% 100%;
+            z-index: -1;
+        }
+
+        .goBack {
+            width: 10rem;
+            height: 3.5rem;
+            background: url("./images/Button\ -\ Go\ Back.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            bottom: 3.7%;
+            left: 0.9%;
+        }
+
+        .goBack:hover {
+            transition: all .3s ease-in-out;
+            transform: scale(1.1);
+            box-shadow: 0 0 5px #cc00ff, 0 0 20px #fb00ff,
+                0 0 35px rgba(255, 0, 247, 0.7), 0 0 50px rgba(200, 0, 255, 0.6);
+            border-color: #fff;
+        }
+
+        .skip {
+            width: 10rem;
+            height: 3.5rem;
+            background: url("./images/Button\ -\ Skip.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            bottom: 3.6%;
+            right: 33%;
+        }
+
+        .skip:hover {
+            transition: all .3s ease-in-out;
+            transform: scale(1.1);
+            box-shadow: 0 0 5px #cc00ff, 0 0 20px #fb00ff,
+                0 0 35px rgba(255, 0, 247, 0.7), 0 0 50px rgba(200, 0, 255, 0.6);
+            border-color: #fff;
+        }
+
+        .invisibleDiv-1 {
+            opacity: 0;
+            border: 3px solid red;
+            width: 61.5rem;
+            height: 6.4rem;
+            position: absolute;
+            bottom: 12%;
+            left: 9.2%;
+        }
+
+        .logo {
+            width: 250px;
+            height: 70px;
+            background: url("./images/logo.png") no-repeat;
+            background-size: 100% 100%;
+            z-index: 99;
+            position: absolute;
+            top: 5%;
+            right: 5%;
+        }
+
+        .grow {
+            transition: all .2s ease-in-out;
+        }
+
+        .grow:hover {
+            transform: scale(1.4);
+            /* box-shadow: 0 0 5px #ffff00, 0 0 20px rgb(255 255 0 / 0.8),
+                0 0 35px rgb(255 255 0 / 0.7), 0 0 50px rgb(255 255 0 / 0.6);
+            border-color: #fff; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="services-page-Q2"></div>
+
+    <a href="./mainpage.html">
+        <div class="logo grow"></div>
+    </a>
+
+    <a href="./services-Q3.html">
+        <div class="goBack"></div>
+    </a>
+
+    <a href="./services-Q5.html">
+        <div class="skip"></div>
+    </a>
+
+    <a href="./services-Q5.html">
+        <div class="invisibleDiv-1"></div>
+    </a>
+
+
+
+</body>
+
+</html>
