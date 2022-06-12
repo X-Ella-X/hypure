@@ -15,157 +15,118 @@
 
 /* L O G O */
 .logo {
-  width: 100px;
-  height: 40px;
+  width: 8rem;
+  height: 2.5rem;
   background: url("./images/logo.png") no-repeat;
   background-size: 100% 100%;
   z-index: 99;
   position: absolute;
-  top: 1%;
-  right: 1%;
+  top: 2%;
+  right: 2%;
 }
 
-@media screen and (min-width:720px){
+@media screen and (min-width: 720px) {
   .logo {
     width: 9.38rem;
-  height: 3.12rem;
-  background: url("./images/logo.png") no-repeat;
-  background-size: 100% 100%;
-  z-index: 99;
-  position: absolute;
-  top: 1%;
-  right: 2%;
+    height: 3.12rem;
+    background: url("./images/logo.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: 99;
+    position: absolute;
+    top: 2%;
+    right: 2%;
   }
-  
 }
 
 @media screen and (min-width: 900px) {
   .logo {
     width: 250px;
-  height: 70px;
-  background: url("./images/logo.png") no-repeat;
-  background-size: 100% 100%;
-  z-index: 99;
-  position: absolute;
-  top: 5%;
-  right: 5%;
+    height: 70px;
+    background: url("./images/logo.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: 99;
+    position: absolute;
+    top: 5%;
+    right: 5%;
   }
 }
 
-
-
 /* C O N T A C T */
 .contact i {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #b34683;
   z-index: 99;
   position: absolute;
-  top: 20%;
-  right: 14%;
+  top: 23%;
+  right: 5%;
 }
 
-.contact {
-  content: attr(data-legend);
-  position: absolute;
-  top: 25%;
-  right: 13%;
-  text-align: center;
-  transform: translateY(100%);
-  font-size: 1.5rem;
-  font-family: "Chau Philomene One", sans-serif;
-  color: #15ee7e;
-}
-
-@media screen and (min-width:720px){
+@media screen and (min-width: 720px) {
   .contact i {
     font-size: 3rem;
+    color: #b34683;
+    z-index: 99;
+    position: absolute;
+    top: 30%;
+    right: 14%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .contact i {
+    font-size: 4rem;
     color: #b34683;
     z-index: 99;
     position: absolute;
     top: 20%;
     right: 14%;
   }
-  
-  .contact {
+
+  .contact:hover i {
+    transform: scale(1.8);
+    transition: all 0.3s ease-in-out;
+    background-size: 100% 100%;
+    z-index: 99;
+    position: absolute;
+    top: 20%;
+    right: 14%;
+  }
+
+  .contact:hover:after {
     content: attr(data-legend);
     position: absolute;
     top: 25%;
     right: 13%;
     text-align: center;
-    font-size: 1.2rem;
+    transform: translateY(100%);
+    font-size: 1.5rem;
     font-family: "Chau Philomene One", sans-serif;
     color: #15ee7e;
-  }  
+  }
 }
-@media screen and (min-width:900px){
-.contact i {
-  font-size: 4rem;
-  color: #b34683;
-  z-index: 99;
-  position: absolute;
-  top: 20%;
-  right: 14%;
-}
-
-.contact:hover i {
-  transform: scale(1.8);
-  transition: all 0.3s ease-in-out;
-  background-size: 100% 100%;
-  z-index: 99;
-  position: absolute;
-  top: 20%;
-  right: 14%;
-}
-
-.contact:hover:after {
-  content: attr(data-legend);
-  position: absolute;
-  top: 25%;
-  right: 13%;
-  text-align: center;
-  transform: translateY(100%);
-  font-size: 1.5rem;
-  font-family: "Chau Philomene One", sans-serif;
-  color: #15ee7e;
-}
-}
-
-
 
 /* A B O U T */
 .about i {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #b34683;
   z-index: 99;
   position: absolute;
-  top: 5%;
-  left: 18%;
+  top: 4%;
+  left: 5%;
 }
 
-.about:hover i {
-  display: block;
-  transform: scale(1.8);
-  transition: all 0.3s ease-in-out;
-  background-size: 100% 100%;
-  z-index: 99;
-  position: absolute;
-  top: 5%;
-  left: 18%;
+@media screen and (min-width: 720px) {
+  .about i {
+    font-size: 3rem;
+    color: #b34683;
+    z-index: 99;
+    position: absolute;
+    top: 6%;
+    left: 8%;
+  }
 }
 
-.about:hover:after {
-  content: attr(data-legend);
-  position: absolute;
-  top: 12%;
-  left: 18%;
-  text-align: center;
-  transform: translateY(100%);
-  font-size: 1.5rem;
-  font-family: "Chau Philomene One", sans-serif;
-  color: #15ee7e;
-}
-
-@media screen and (min-width:720px){
+@media screen and (min-width: 900px) {
   .about i {
     font-size: 4rem;
     color: #b34683;
@@ -174,7 +135,7 @@
     top: 5%;
     left: 18%;
   }
-  
+
   .about:hover i {
     display: block;
     transform: scale(1.8);
@@ -185,7 +146,7 @@
     top: 5%;
     left: 18%;
   }
-  
+
   .about:hover:after {
     content: attr(data-legend);
     position: absolute;
@@ -196,77 +157,31 @@
     font-size: 1.5rem;
     font-family: "Chau Philomene One", sans-serif;
     color: #15ee7e;
-  }    
-}
-
-@media screen and (min-width:900px){
-  .about i {
-    font-size: 4rem;
-    color: #b34683;
-    z-index: 99;
-    position: absolute;
-    top: 5%;
-    left: 18%;
   }
-  
-  .about:hover i {
-    display: block;
-    transform: scale(1.8);
-    transition: all 0.3s ease-in-out;
-    background-size: 100% 100%;
-    z-index: 99;
-    position: absolute;
-    top: 5%;
-    left: 18%;
-  }
-  
-  .about:hover:after {
-    content: attr(data-legend);
-    position: absolute;
-    top: 12%;
-    left: 18%;
-    text-align: center;
-    transform: translateY(100%);
-    font-size: 1.5rem;
-    font-family: "Chau Philomene One", sans-serif;
-    color: #15ee7e;
-  }  
 }
-
 
 /* S E R V I C E S */
 .services i {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #b34683;
   z-index: 99;
   position: absolute;
-  top: 10%;
-  left: 35%;
+  top: 9%;
+  left: 30%;
 }
 
-.services:hover i {
-  transform: scale(1.8);
-  transition: all 0.3s ease-in-out;
-  background-size: 100% 100%;
-  z-index: 99;
-  position: absolute;
-  top: 10%;
-  left: 35%;
+@media screen and (min-width: 720px) {
+  .services i {
+    font-size: 3rem;
+    color: #b34683;
+    z-index: 99;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+  }
 }
 
-.services:hover:after {
-  content: attr(data-legend);
-  position: absolute;
-  top: 17%;
-  left: 35%;
-  text-align: center;
-  transform: translateY(100%);
-  font-size: 1.5rem;
-  font-family: "Chau Philomene One", sans-serif;
-  color: #15ee7e;
-}
-
-@media screen and (min-width:720px){
+@media screen and (min-width: 900px) {
   .services i {
     font-size: 4rem;
     color: #b34683;
@@ -275,7 +190,7 @@
     top: 10%;
     left: 35%;
   }
-  
+
   .services:hover i {
     transform: scale(1.8);
     transition: all 0.3s ease-in-out;
@@ -285,7 +200,7 @@
     top: 10%;
     left: 35%;
   }
-  
+
   .services:hover:after {
     content: attr(data-legend);
     position: absolute;
@@ -298,76 +213,31 @@
     color: #15ee7e;
   }
 }
-
-@media screen and (min-width:900px){
-  .services i {
-    font-size: 4rem;
-    color: #b34683;
-    z-index: 99;
-    position: absolute;
-    top: 10%;
-    left: 35%;
-  }
-  
-  .services:hover i {
-    transform: scale(1.8);
-    transition: all 0.3s ease-in-out;
-    background-size: 100% 100%;
-    z-index: 99;
-    position: absolute;
-    top: 10%;
-    left: 35%;
-  }
-  
-  .services:hover:after {
-    content: attr(data-legend);
-    position: absolute;
-    top: 17%;
-    left: 35%;
-    text-align: center;
-    transform: translateY(100%);
-    font-size: 1.5rem;
-    font-family: "Chau Philomene One", sans-serif;
-    color: #15ee7e;
-  }
-}
-
-
 
 /* A W A R D S */
 .award i {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #b34683;
   background-size: 100% 100%;
   z-index: 99;
   position: absolute;
-  top: 20%;
-  left: 25%;
+  top: 18%;
+  left: 11%;
 }
 
-.award:hover i {
-  transform: scale(1.8);
-  transition: all 0.3s ease-in-out;
-  background-size: 100% 100%;
-  z-index: 99;
-  position: absolute;
-  top: 20%;
-  left: 24%;
+@media screen and (min-width: 720px) {
+  .award i {
+    font-size: 3rem;
+    color: #b34683;
+    background-size: 100% 100%;
+    z-index: 99;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+  }
 }
 
-.award:hover:after {
-  content: attr(data-legend);
-  position: absolute;
-  top: 26.5%;
-  left: 24%;
-  text-align: center;
-  transform: translateY(100%);
-  font-size: 1.5rem;
-  font-family: "Chau Philomene One", sans-serif;
-  color: #15ee7e;
-}
-
-@media screen and (min-width:720px){
+@media screen and (min-width: 900px) {
   .award i {
     font-size: 4rem;
     color: #b34683;
@@ -377,7 +247,7 @@
     top: 20%;
     left: 25%;
   }
-  
+
   .award:hover i {
     transform: scale(1.8);
     transition: all 0.3s ease-in-out;
@@ -387,7 +257,7 @@
     top: 20%;
     left: 24%;
   }
-  
+
   .award:hover:after {
     content: attr(data-legend);
     position: absolute;
@@ -400,75 +270,29 @@
     color: #15ee7e;
   }
 }
-
-@media screen and (min-width: 900px){
-  .award i {
-    font-size: 4rem;
-    color: #b34683;
-    background-size: 100% 100%;
-    z-index: 99;
-    position: absolute;
-    top: 20%;
-    left: 25%;
-  }
-  
-  .award:hover i {
-    transform: scale(1.8);
-    transition: all 0.3s ease-in-out;
-    background-size: 100% 100%;
-    z-index: 99;
-    position: absolute;
-    top: 20%;
-    left: 24%;
-  }
-  
-  .award:hover:after {
-    content: attr(data-legend);
-    position: absolute;
-    top: 26.5%;
-    left: 24%;
-    text-align: center;
-    transform: translateY(100%);
-    font-size: 1.5rem;
-    font-family: "Chau Philomene One", sans-serif;
-    color: #15ee7e;
-  }
-}
-
-
 
 /* C A R E E R */
 .career i {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #b34683;
   z-index: 99;
   position: absolute;
-  top: 10%;
-  right: 32%;
+  top: 12%;
+  right: 20%;
 }
 
-.career:hover i {
-  transform: scale(1.8);
-  transition: all 0.3s ease-in-out;
-  z-index: 99;
-  position: absolute;
-  top: 10%;
-  right: 32%;
+@media screen and (min-width: 720px) {
+  .career i {
+    font-size: 3rem;
+    color: #b34683;
+    z-index: 99;
+    position: absolute;
+    top: 10%;
+    right: 28%;
+  }
 }
 
-.career:hover:after {
-  content: attr(data-legend);
-  position: absolute;
-  top: 15.5%;
-  right: 32%;
-  text-align: center;
-  transform: translateY(100%);
-  font-size: 1.5rem;
-  font-family: "Chau Philomene One", sans-serif;
-  color: #15ee7e;
-}
-
-@media screen and (min-width:720px){
+@media screen and (min-width: 900px) {
   .career i {
     font-size: 4rem;
     color: #b34683;
@@ -477,7 +301,7 @@
     top: 10%;
     right: 32%;
   }
-  
+
   .career:hover i {
     transform: scale(1.8);
     transition: all 0.3s ease-in-out;
@@ -486,7 +310,7 @@
     top: 10%;
     right: 32%;
   }
-  
+
   .career:hover:after {
     content: attr(data-legend);
     position: absolute;
@@ -499,73 +323,29 @@
     color: #15ee7e;
   }
 }
-
-@media screen and (min-width:900px){
-  .career i {
-    font-size: 4rem;
-    color: #b34683;
-    z-index: 99;
-    position: absolute;
-    top: 10%;
-    right: 32%;
-  }
-  
-  .career:hover i {
-    transform: scale(1.8);
-    transition: all 0.3s ease-in-out;
-    z-index: 99;
-    position: absolute;
-    top: 10%;
-    right: 32%;
-  }
-  
-  .career:hover:after {
-    content: attr(data-legend);
-    position: absolute;
-    top: 15.5%;
-    right: 32%;
-    text-align: center;
-    transform: translateY(100%);
-    font-size: 1.5rem;
-    font-family: "Chau Philomene One", sans-serif;
-    color: #15ee7e;
-  }
-}
-
-
 
 /* P A R T N E R */
 .partner i {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #b34683;
   z-index: 99;
   position: absolute;
   top: 22%;
-  left: 55%;
+  left: 60%;
 }
 
-.partner:hover i {
-  transform: scale(1.8);
-  transition: all 0.3s ease-in-out;
-  z-index: 99;
-  position: absolute;
-  top: 22%;
-  left: 55%;
+@media screen and (min-width: 720px) {
+  .partner i {
+    font-size: 3rem;
+    color: #b34683;
+    z-index: 99;
+    position: absolute;
+    top: 22%;
+    left: 58%;
+  }
 }
 
-.partner:hover:after {
-  content: attr(data-legend);
-  position: absolute;
-  top: 27%;
-  left: 55%;
-  text-align: center;
-  transform: translateY(100%);
-  font-size: 1.5rem;
-  font-family: "Chau Philomene One", sans-serif;
-  color: #15ee7e;
-}
-
-@media screen and (min-width:720px){
+@media screen and (min-width: 900px) {
   .partner i {
     font-size: 4rem;
     color: #b34683;
@@ -574,7 +354,7 @@
     top: 22%;
     left: 55%;
   }
-  
+
   .partner:hover i {
     transform: scale(1.8);
     transition: all 0.3s ease-in-out;
@@ -583,7 +363,7 @@
     top: 22%;
     left: 55%;
   }
-  
+
   .partner:hover:after {
     content: attr(data-legend);
     position: absolute;
@@ -596,43 +376,30 @@
     color: #15ee7e;
   }
 }
-
-@media screen and (min-width:900px){
-  .partner i {
-    font-size: 4rem;
-    color: #b34683;
-    z-index: 99;
-    position: absolute;
-    top: 22%;
-    left: 55%;
-  }
-  
-  .partner:hover i {
-    transform: scale(1.8);
-    transition: all 0.3s ease-in-out;
-    z-index: 99;
-    position: absolute;
-    top: 22%;
-    left: 55%;
-  }
-  
-  .partner:hover:after {
-    content: attr(data-legend);
-    position: absolute;
-    top: 27%;
-    left: 55%;
-    text-align: center;
-    transform: translateY(100%);
-    font-size: 1.5rem;
-    font-family: "Chau Philomene One", sans-serif;
-    color: #15ee7e;
-  }
-}
-
-
 
 /* M I S S I O N */
 .mission i {
+  font-size: 3rem;
+  color: #b34683;
+  z-index: 99;
+  position: absolute;
+  top: 33%;
+  left: 9%;
+}
+
+@media screen and (min-width: 720px) {
+  .mission i {
+    font-size: 3rem;
+    color: #b34683;
+    z-index: 99;
+    position: absolute;
+    top: 25%;
+    left: 9%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .mission i {
     font-size: 4rem;
     color: #b34683;
     z-index: 99;
@@ -640,7 +407,7 @@
     top: 25%;
     left: 9%;
   }
-  
+
   .mission:hover i {
     transform: scale(1.8);
     transition: all 0.3s ease-in-out;
@@ -649,7 +416,7 @@
     top: 25%;
     left: 9%;
   }
-  
+
   .mission:hover:after {
     content: attr(data-legend);
     position: absolute;
@@ -661,72 +428,9 @@
     font-family: "Chau Philomene One", sans-serif;
     color: #15ee7e;
   }
+}
 
-  @media screen and (min-width:720px){
-    .mission i {
-      font-size: 4rem;
-      color: #b34683;
-      z-index: 99;
-      position: absolute;
-      top: 25%;
-      left: 9%;
-    }
-    
-    .mission:hover i {
-      transform: scale(1.8);
-      transition: all 0.3s ease-in-out;
-      z-index: 99;
-      position: absolute;
-      top: 25%;
-      left: 9%;
-    }
-    
-    .mission:hover:after {
-      content: attr(data-legend);
-      position: absolute;
-      top: 32%;
-      left: 9%;
-      text-align: center;
-      transform: translateY(100%);
-      font-size: 1.5rem;
-      font-family: "Chau Philomene One", sans-serif;
-      color: #15ee7e;
-    }
-  }
-
-  @media screen and (min-width:900px){
-    .mission i {
-      font-size: 4rem;
-      color: #b34683;
-      z-index: 99;
-      position: absolute;
-      top: 25%;
-      left: 9%;
-    }
-    
-    .mission:hover i {
-      transform: scale(1.8);
-      transition: all 0.3s ease-in-out;
-      z-index: 99;
-      position: absolute;
-      top: 25%;
-      left: 9%;
-    }
-    
-    .mission:hover:after {
-      content: attr(data-legend);
-      position: absolute;
-      top: 32%;
-      left: 9%;
-      text-align: center;
-      transform: translateY(100%);
-      font-size: 1.5rem;
-      font-family: "Chau Philomene One", sans-serif;
-      color: #15ee7e;
-    }
-  }
-
-    /* Design for circle animation */
-      /* box-shadow: 0 0 5px #ffff00, 0 0 20px rgb(255 255 0 / 0.8),
+/* Design for circle animation */
+/* box-shadow: 0 0 5px #ffff00, 0 0 20px rgb(255 255 0 / 0.8),
             0 0 35px rgb(255 255 0 / 0.7), 0 0 50px rgb(255 255 0 / 0.6);
         border-color: #fff; */
