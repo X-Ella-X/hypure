@@ -21,6 +21,10 @@ The code for the calendar und time input
 - about.html
 - add the resized background image
 
+## Mission #5
+- award.html
+- wtf
+
 
 
 ## Missions done:
