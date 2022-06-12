@@ -57,8 +57,8 @@
 .contact:hover:after {
     content: attr(data-legend);
     position: absolute;
-    top: 30%;
-    right:14%;
+    top: 25%;
+    right:13%;
     text-align: center;
     transform: translateY(100%);
     font-size: 1.5rem;
@@ -67,7 +67,7 @@
 }
 
 .about {
-    font-size: 5rem;
+    font-size: 4rem;
     color: 
     #b34683;
     z-index: 99;
@@ -76,7 +76,7 @@
     left: 18%;
 }
 
-.about:hover {
+.about:hover i {
     display: block;
     transform: scale(1.8);
     transition: all .3s ease-in-out;
@@ -87,21 +87,20 @@
     left: 18%;
 }
 
-/* .about:hover:after {
+.about:hover:after {
     content: attr(data-legend);
     position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    top: 15%;
+    left: 17%;
     text-align: center;
     transform: translateY(100%);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: 'Chau Philomene One', sans-serif;
     color: #15ee7e;
-} */
+}
 
 .services i {
-    font-size: 5rem;
+    font-size: 4rem;
     color: 
     #b34683;
     z-index: 99;
@@ -110,7 +109,7 @@
     left: 35%;
 }
 
-.services i:hover {
+.services :hover {
     transform: scale(1.8);
     transition: all .3s ease-in-out;
     background-size: 100% 100%;
@@ -120,18 +119,17 @@
     left: 35%;
 }
 
-/* .services:hover:after i{
+.services:hover:after {
     content: attr(data-legend);
     position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    top: 20%;
+    left: 35%;
     text-align: center;
     transform: translateY(100%);
     font-size: 1rem;
     font-family: 'Chau Philomene One', sans-serif;
     color: #15ee7e;
-} */
+}
 
 .award {
     font-size: 5rem;
