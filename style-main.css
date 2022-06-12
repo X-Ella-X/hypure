@@ -225,8 +225,8 @@
     color: #b34683;
     z-index: 99;
     position: absolute;
-    top: 22%;
-    left: 70%;
+    top: 25%;
+    left: 9%;
   }
   
   .mission:hover i {
@@ -234,15 +234,15 @@
     transition: all 0.3s ease-in-out;
     z-index: 99;
     position: absolute;
-    top: 22%;
-    left: 55%;
+    top: 25%;
+    left: 9%;
   }
   
   .mission:hover:after {
     content: attr(data-legend);
     position: absolute;
-    top: 27%;
-    left: 55%;
+    top: 32%;
+    left: 9%;
     text-align: center;
     transform: translateY(100%);
     font-size: 1.5rem;
