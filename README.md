@@ -14,20 +14,16 @@ The code for the calendar und time input
 - adjust the background size
 
 ## Mission #3
-- main.html
-- animate the icons
-
-## Mission #4
 - about.html
 - add the resized background image
 
-## Mission #5
+## Mission #4
 - award.html
 - wtf
-
 
 
 ## Missions done:
 #### Contact
 #### Mission
 #### Services
+#### Main
