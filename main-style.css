@@ -440,6 +440,15 @@
   }
 }
 
+.copyright p {
+  font-size: 1.1rem;
+  font-family: "Chau Philomene One", sans-serif;
+  color: #ffa6e1;
+  position: absolute;
+  bottom: 0%;
+  left: 0.5%;
+}
+
 /* Design for circle animation */
 /* box-shadow: 0 0 5px #ffff00, 0 0 20px rgb(255 255 0 / 0.8),
             0 0 35px rgb(255 255 0 / 0.7), 0 0 50px rgb(255 255 0 / 0.6);
