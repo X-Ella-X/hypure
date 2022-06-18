@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body gets a background-image */
+body {
+  height: 100vh;
+  background-image: url(./images/main-responsive.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* All .container get the same styling including media query (Mobile First) */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 99;
+  position: absolute;
+  gap: 0.3rem;
+}
+
+@media screen and (min-width: 900px) {
+    .container span {
+    display: none;
+  }
+
+  .container:hover {
+    transform: scale(1.3,1.3);
+    transition: all 0.3s ease-in-out;
+    border: none;
+  }
+
+  .container:hover span {
+    display: contents;
+  }
+}
+
+/* All icons get the same styling including media query */
+.icon {
+  color: #b34683;
+  font-size: 3.2rem;
+  animation: glow 1s ease-in-out infinite alternate;
+  /* text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6; */
+  text-shadow: 0 0 1rem #fff, 0 0 3rem #fff, 0 0 4rem #e60073, 0 0 40px #e60073, 0 0 5rem #e60073, 0 0 6rem #e60073, 0 0 7rem #e60073;
+}
+
+@media screen and (min-width: 720px) {
+    .icon {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .icon {
+        text-shadow:none;
+    }
+
+    .icon:hover {
+        text-shadow: 0 0 1rem #fff, 0 0 3rem #fff, 0 0 4rem #e60073, 0 0 40px #e60073, 0 0 5rem #e60073, 0 0 6rem #e60073, 0 0 7rem #e60073;
+    }
+}
+
+.icon-text {
+  font-size: 1.2rem;
+  font-family: "Chau Philomene One", sans-serif;
+  color: #15ee7e;
+}
+
+@media screen and (min-width: 720px) {
+  .icon-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* M I S S I O N */
+.mission {
+  top: 13%;
+  left: 4%;
+}
+
+
+/* A W A R D S */
+.awards {
+  top: 27%;
+  left: 11%;
+}
+
+/* A B O U T */
+.about {
+  top: 7%;
+  left: 20%;
+}
+
+/* S E R V I C E S */
+.services {
+  top: 20%;
+  left: 28%;
+}
+
+/* P A R T N E R S */
+.partners {
+  top: 22%;
+  left: 62%;
+}
+
+/* C A R E E R */
+.career {
+  top: 10%;
+  right: 20%;
+}
+
+/* C O N T A C T */
+.contact {
+  top: 18%;
+  right: 5%;
+}
+
+/* F O O T E R */
+.copyright {
+  font-size: 0.8rem;
+  font-family: "Chau Philomene One", sans-serif;
+  color: #ffa6e1;
+  position: fixed;
+  bottom: 0;
+  left: 0.2rem;
+}
+
+/* E A S T E R  E G G */
+.invisibleDiv-1 {
+    width: 4rem;
+    height: 6rem;
+    position: absolute;
+    top: 10%;
+    left: 47.5%;
+  }
