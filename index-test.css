@@ -13,6 +13,32 @@ body {
   background-size: cover;
 }
 
+/* L O G O */
+.logo {
+  width: 8rem;
+  height: 2.5rem;
+  background: url("./images/logo.png") no-repeat;
+  background-size: 100% 100%;
+  z-index: 99;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+@media screen and (min-width: 720px) {
+  .logo {
+    width: 9.38rem;
+    height: 3.12rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .logo {
+    top: 3%;
+    right: 3%;
+  }
+}
+
 /* All .container get the same styling including media query (Mobile First) */
 .container {
   display: flex;
