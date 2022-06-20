@@ -2,28 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid green;
 }
 
 body {
   height: 100vh;
   width: 100vw;
-  background-image: url(./images/about-responsive.jpeg);
+  background: url("./images/career-responsive.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
 }
-/* .about-page {
-  width: 100%;
-  height: 100vh;
-  background: url("./images/about.jpg") no-repeat center center fixed;
-  background-size: cover;
-  z-index: -1;
-} */
 
-/* L O G O */
 .logo {
   width: 8rem;
   height: 2.5rem;
@@ -53,9 +44,21 @@ body {
   }
 }
 
-.container-street-name {
-  align-self: center;
+.applyBtn {
+  width: 10rem;
+  height: 1.5rem;
+  background: url("./images/Button\ -\ Apply\ Now.png") no-repeat;
+  background-size: 100% 100%;
+  z-index: 99;
+  position: absolute;
+  bottom: 3%;
+  left: 2.5%;
 }
-.container-street-name img {
-  width: 13rem;
+
+.applyBtn:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: 0 0 5px #ffff00, 0 0 20px #fff200, 0 0 35px rgba(255, 251, 0, 0.7),
+    0 0 50px rgba(200, 0, 255, 0.6);
+  border-color: #fff;
 }
